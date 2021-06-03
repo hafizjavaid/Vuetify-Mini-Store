@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" modified="2021-04-30T15:53:04.034Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="ViHuRzp5OjWsQMJAWIt_" version="14.6.9" type="gitlab">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-19" value="End to end prototype" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="120" width="910" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-35" value="Passes shopId + token" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="aPNCFickej0JTjnr3rTl-9" target="dNxyNK7c78bLwvsdeMH5-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-20" value="Shopify APIs&lt;br&gt;" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+          <mxGeometry x="20" width="890" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="dNxyNK7c78bLwvsdeMH5-20" source="dNxyNK7c78bLwvsdeMH5-23" target="dNxyNK7c78bLwvsdeMH5-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-23" value="Client installs App" style="ellipse;whiteSpace=wrap;html=1;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
+          <mxGeometry x="30" y="30" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-24" value="Shopify Authentication process" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
+          <mxGeometry x="120" y="30" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-11" value="Shopify Product (?) API" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
+          <mxGeometry x="410" y="30" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-15" value="Doubt: where do we ask for the Products context?" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;size=30;position=0.75;fillColor=#FFF2CC;base=20;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
+          <mxGeometry x="40" y="120" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-25" value="Shopify Store&amp;nbsp; (?) API" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
+          <mxGeometry x="739" y="30" width="73" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-21" value="Koa Server / Next" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+          <mxGeometry x="20" y="190" width="890" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-21" source="dNxyNK7c78bLwvsdeMH5-26" target="aPNCFickej0JTjnr3rTl-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-26" value="Receives ShopID + Authentication token" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
+          <mxGeometry x="120" y="30" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-9" value="Creates new App, mounting the Vue App compiled to /public" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
+          <mxGeometry x="240" y="30" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-22" value="Vue app" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+          <mxGeometry x="20" y="310" width="890" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-34" value="App is instantiated" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-22" vertex="1">
+          <mxGeometry x="260" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-19" value="Link a chart / content to a Product / Collection / Label" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-22" vertex="1">
+          <mxGeometry x="540" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-24" value="Creates a script tag? Injects a button into a product page?" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-22" vertex="1">
+          <mxGeometry x="700" y="20" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-30" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-22" source="aPNCFickej0JTjnr3rTl-19" target="aPNCFickej0JTjnr3rTl-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="140" as="sourcePoint" />
+            <mxPoint x="710" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-1" value="Firebase" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+          <mxGeometry x="20" y="450" width="890" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="dNxyNK7c78bLwvsdeMH5-24" target="dNxyNK7c78bLwvsdeMH5-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="430" as="sourcePoint" />
+            <mxPoint x="310" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="dNxyNK7c78bLwvsdeMH5-34" target="aPNCFickej0JTjnr3rTl-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="220" as="sourcePoint" />
+            <mxPoint x="210" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-16" value="Requests shops Products, &lt;br&gt;Collections and Labels" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aPNCFickej0JTjnr3rTl-13" vertex="1" connectable="0">
+          <mxGeometry x="0.2263" y="-3" relative="1" as="geometry">
+            <mxPoint x="17" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="aPNCFickej0JTjnr3rTl-11" target="aPNCFickej0JTjnr3rTl-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="370" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-22" value="Returns Products, &lt;br&gt;Collections and Labels" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aPNCFickej0JTjnr3rTl-21" vertex="1" connectable="0">
+          <mxGeometry x="0.2263" y="-3" relative="1" as="geometry">
+            <mxPoint x="17" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-29" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="aPNCFickej0JTjnr3rTl-24" target="aPNCFickej0JTjnr3rTl-25" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="200" as="sourcePoint" />
+            <mxPoint x="830" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-31" value="This Koa server already exists: it was created following Shopify&#39;s tutorial" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;size=40;position=0.06;fillColor=#FFF2CC;base=20;" parent="1" vertex="1">
+          <mxGeometry x="920" y="310" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aPNCFickej0JTjnr3rTl-32" value="Vue app can be coded separately, and the build is copied to /public on the Koa project" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;size=40;position=0.06;fillColor=#FFF2CC;base=20;" parent="1" vertex="1">
+          <mxGeometry x="920" y="450" width="180" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

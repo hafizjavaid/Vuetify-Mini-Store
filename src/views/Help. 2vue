@@ -1,0 +1,19 @@
+<template>
+  <div class="elena">
+    <div class="help">
+      <h1 color="primary" primary>This is the Help page</h1>
+    </div>
+  </div>
+</template>
+
+<style >
+.help {
+  /* background-color: royalblue; */
+}
+
+.elena {
+  background-color: sandybrown;
+  /* min-height: 100vh; */
+  height: 100%;
+}
+</style>
