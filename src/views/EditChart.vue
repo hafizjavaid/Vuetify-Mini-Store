@@ -93,11 +93,11 @@
         </v-col>
       </v-row>
 
-      <!-- Editor -->
+      <!-- Editor ( Key Use Here) -->
       <v-row>
         <v-col cols="12">
           <editor
-            api-key="rgzewf8bpj47rk4q9ygpl0bcuyaabatbmp3jxz580wge3228"
+           
             :init="initValues"
             v-model="currentChart.content"
           ></editor>
